@@ -1,0 +1,11 @@
+.card button {
+  background-color: var(--button-background);
+  color: var(--background);
+  padding: var(--spacing-medium);
+  border-radius: var(--spacing-sm);
+  cursor: pointer;
+}
+
+.card button:hover {
+ background-color: var(--button-background-hover);
+}

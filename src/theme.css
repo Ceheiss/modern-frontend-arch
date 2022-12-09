@@ -1,0 +1,17 @@
+:root {
+  --background: #fff;
+  --text: #222;
+  --border-default: 1px solid;
+  --border-color: #EDEDED;
+  --button-background: #0A84FF;
+  --button-background-hover: #035ab1;
+  --background-sale: #fca9dc;
+  --light: #888;
+  --font-sm: 12px;
+  --spacing-sm: 4px;
+  --spacing-medium: 8px;
+  --spacing-medium: 12px;
+  --spacing-xlarge: 48px;
+  --shadow-default: 10px 9px 33px -17px rgba(0,0,0,0.75);
+  --radius-default: 8px;
+}

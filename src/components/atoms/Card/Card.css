@@ -1,0 +1,21 @@
+.card {
+  display: flex;
+  flex-direction: column;
+  max-width: 240px;
+  background-color: var(--background);
+  color: var(--text);
+  padding: var(--spacing-medium);
+  margin: var(--spacing-large);
+  border: var(--border-default);
+  border-color: var(--light);
+  border-radius: var(--radius-default);
+  box-shadow: var(--shadow-default);
+}
+
+.card small::before {
+  content: '$'
+}
+
+.card.sale{
+  background-color: var(--background-sale);
+}
