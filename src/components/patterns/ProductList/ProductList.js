@@ -1,3 +1,5 @@
+import ProductListItem from "../ProductListItem";
+
 // The machine can have different states, but at a given time fulfills only one of them
 export const statusTypes = {
   loading: "loading",
@@ -20,5 +22,7 @@ export default function ProductList({ status, ...otherProps }) {
   if (status === statusTypes.errored) {
     return <Error message="Failed to load data" />;
   }
-  return <h1>Hello</h1>; // Standard Output
+  return otherProps.data.map((e) => (
+    <ProductListItem name={e.name} price={e.price} imageUrl={e.imageUrl} />
+  ));
 }

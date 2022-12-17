@@ -3,13 +3,24 @@ import "./Navigation.css";
 
 export default function Navigation() {
   return (
-    <div className="nav-bar">
-      <Link to="/" className="nav-link">
-        Home
-      </Link>
-      <Link to="/about" className="nav-link">
-        About
-      </Link>
-    </div>
+    <nav>
+      <ul className="nav-bar">
+        <li>
+          <Link to="/" className="nav-link">
+            Products
+          </Link>
+        </li>
+        <li>
+          <Link to="/cart" className="nav-link">
+            Cart
+          </Link>
+        </li>
+        <li>
+          <Link to="/userProfile" className="nav-link">
+            Profile
+          </Link>
+        </li>
+      </ul>
+    </nav>
   );
 }

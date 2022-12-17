@@ -1,7 +1,12 @@
 .nav-link {
   margin-right: 40px;
+  text-decoration: none;
 }
 
 .nav-bar {
-  margin: 10px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  max-width: 300px;
+  list-style-type: none;
 }

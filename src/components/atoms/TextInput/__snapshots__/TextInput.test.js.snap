@@ -1,0 +1,17 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[` 1`] = `
+<div>
+  <h1>
+    Hello from TextInput
+  </h1>
+</div>
+`;
+
+exports[`TextInput should show container 1`] = `
+<div>
+  <h1>
+    Hello from TextInput
+  </h1>
+</div>
+`;
