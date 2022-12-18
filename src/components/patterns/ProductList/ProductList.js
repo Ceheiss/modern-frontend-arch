@@ -22,7 +22,11 @@ export default function ProductList({ status, ...otherProps }) {
   if (status === statusTypes.errored) {
     return <Error message="Failed to load data" />;
   }
-  return otherProps.data.map((e) => (
-    <ProductListItem name={e.name} price={e.price} imageUrl={e.imageUrl} />
-  ));
+  if (otherProps.data) {
+    return otherProps.data.map((e) => (
+      <ProductListItem name={e.name} price={e.price} imageUrl={e.imageUrl} />
+    ));
+  } else {
+    return <></>;
+  }
 }

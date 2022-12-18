@@ -9,3 +9,8 @@
 .card button:hover {
  background-color: var(--button-background-hover);
 }
+
+.card button:hover:disabled {
+  background-color: var(--button-background);
+  cursor: unset;
+ }
